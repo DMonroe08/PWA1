@@ -44,15 +44,16 @@
 
     console.log('------ Goal2: Assignment: JavaScript Practice ----------');
 
+    var avgNum = [1, 2, 3, 4, 5];
     console.log("1. avg of an array of numbers");
     var avgNumbers = function(arr){
-
+        var avgNum = ((0, 1, 2, 3, 4)/5);
 
         //CODE GOES HERE
     };
 
     console.log('avg number = ', avgNumbers([1,2,3,4,5]));
-
+    avgNumbers(avgNum);
     //--------------------------------------------------------
     console.log("2. concat first and last name");
 
