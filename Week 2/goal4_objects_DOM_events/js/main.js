@@ -478,6 +478,20 @@ console.log('------------ querySelectorAll -------------------');
 
         attr = href, src, class
 */
+console.log('-------Manipulation Attributes setAttribute / getAttributes------');
+    var navLinks = document.querySelectorAll('#nav li');
+
+    for (var i= 0, max=navLinks.length; i<max; i++){
+        var href = navLinks[i].firstChild.getAttribute('href');
+        console.log('Manipulation HREF:', href);
+
+        if(href +++ '#1'){
+            var href2 = navLinks[i].firstChild;
+            console.log(href2);
+
+            href2.setAttribute('href', 'http://www.fullsail.com');
+        };
+    //};
 
 
 
@@ -497,7 +511,10 @@ console.log('------------ querySelectorAll -------------------');
 
 console.log('------------ Manipulating CSS Classes -------------------');
 
+       // var aClass = navLinks[i].firstChild.getAttribute('class');
+        //console.log('Manipulation CLASS:', aClass);
 
+        //navLinks[i].firstChild.setAttribute('class', 'navitem active');
 /*
 	==================================================================
 	Replacing an HTML container with new HTML
@@ -508,8 +525,23 @@ console.log('------------ Manipulating CSS Classes -------------------');
 
 Sample Link: http://www.instructables.com/files/deriv/FJI/WGSW/FPIUQQ3K/FJIWGSWFPIUQQ3K.MEDIUM.jpg
 */
+console.log('----------Manipulating HTML---------');
 
+        navLinks[i].firstChild.setAttribute('href','http://google.com');
 
+    };
+
+    var navLinks = document.querySelectorAll('#nav a');
+    console.log(navLinks[1].innerHTML);
+
+    navLinks[1].innerHTML = 'This link rocks!'
+
+    for (var i = 0, max = navLinks.length; i<max; i++){
+        navLinks[i].innerHTML = 'Click Me'+ i;
+    };
+
+    var bigImage = docutment.querySelector('#contentPreview img');
+    bigImage.setAttribute('src','http://www.instructables.com/files/deriv/FJI/WGSW/FPIUQQ3K/FJIWGSWFPIUQQ3K.MEDIUM.jpg');
 
 /*
 	==================================================================
