@@ -540,7 +540,7 @@ console.log('----------Manipulating HTML---------');
         navLinks[i].innerHTML = 'Click Me'+ i;
     };
 
-    var bigImage = docutment.querySelector('#contentPreview img');
+    var bigImage = document.querySelector('#contentPreview img');
     bigImage.setAttribute('src','http://www.instructables.com/files/deriv/FJI/WGSW/FPIUQQ3K/FJIWGSWFPIUQQ3K.MEDIUM.jpg');
 
 /*
