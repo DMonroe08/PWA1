@@ -3,11 +3,11 @@
 	* Danielle Monroe
 */
 
-(function)(){
+var alum = function(){
     var button = document.getElementById(".buttonred");
     var i = 0;
 
-
+    //sets up student information
     var students = [
 
         {
@@ -21,12 +21,30 @@
             address: {'street': "48 Empire Street", 'city': "Rome", 'state': "Kansas"},
             gpa: [3.5, 4.0, 2.6,3.4]
 
-        },
-        {
-            name:"Audry Hepburn",
-            address: {'street': "19 Tiffany Blvd", 'city': "Higgans", 'state': "California"},
-            gpa: [4.0, 2.8, 2.6, 3.8]
 
-        }]
 
-}
+        }];
+
+    //console.log (students[0].name + "." + students[0].address + "," + students[0].gpa);
+    //console.log(students[1].name + "," + students[1].address + "," + students[1].gpa);
+    //function to console out student information
+    var studentInfo = function(){
+        for (var i = 0, j= students.length; i < j; i++){
+            console.log('Names:' + students[i].name);
+            console.log('Address:' + students[i].address);
+            console.log('GPA:' + students[i].gpa);
+        }
+    }
+
+    var addData = function(){
+        var newStudent = {
+            name: "Audry Hepburn",
+            address: {'street': "19 Tiffany Blvd", 'city': "Higgins", 'state': "California"},
+            gpa: [3.4, 3.5, 2.4, 3.2]
+        }
+    }
+    
+    };
+
+
+
