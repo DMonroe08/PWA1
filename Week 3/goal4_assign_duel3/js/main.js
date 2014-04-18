@@ -44,11 +44,12 @@
         }];
     var round = 1;
 
+
     //initializes DOM innerHTML text
     roundInfo.innerHTML = "Click to Start Fight";
     fighterOne.innerHTML = fighters[0].name + ":" + fighters[0].health;
     fighterTwo.innerHTML = fighters[1].name + ":" + fighters[1].health;
-
+    outcome.innerHTML = "Lets Fight!!";
 
     //function fight(){
         //console.log("in the fight function");
@@ -128,7 +129,7 @@
 
 
 
-
+outcome = winnerCheck;
 
 
     function winnerCheck(){
@@ -151,4 +152,3 @@
 
 })();
 
-outcome.innerHTML = winnerCheck;
