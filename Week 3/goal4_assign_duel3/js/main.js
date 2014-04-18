@@ -149,6 +149,6 @@
     //console.log("program starts");
     //fight();
     };
-    
+
 })();
 
