@@ -93,7 +93,7 @@
 
 
     //New fight function to work in the inner HTML
-    function fight(e){
+    function fight(){
         fighterOne.innerHTML = fighters[0].name + ":" + fighters[0].health;
         fighterTwo.innerHTML = fighters[1].name + ":" + fighters[1].health;
 
@@ -122,8 +122,7 @@
             document.querySelector('.buttonblue').innerHTML = 'DONE!';
 
         }
-        e.preventDefault();
-        return false;
+        return result;
 
 
 
@@ -143,12 +142,13 @@
             result = fighters[0].name +"WINS!!!"
 
             };
+            outcome.innerHTML = result;
             return result;
 
         };
     //console.log("program starts");
     //fight();
     };
-    outcome.innerHTML(fight);
+    
 })();
 
