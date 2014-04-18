@@ -105,7 +105,7 @@
 
         console.log(fighters[0].health, fighters[1].health);
 
-        var result  = winnerCheck();
+        var result  = winnerCheck(); //not sure if this belongs here
         console.log(result);
 
         roundInfo.innerHTML = "ROUND" + round + "complete";
@@ -117,7 +117,7 @@
 
         }else{
             fighterOne.innterHTML = result;
-            fighterTwo.innterHTML = "";
+            fighterTwo.innterHTML = result;
             button.removeEventListener("click", fight, false);
             document.querySelector('.buttonblue').innerHTML = 'DONE!';
 
@@ -125,30 +125,30 @@
         e.preventDefault();
         return false;
 
-    };
 
 
 
-outcome = winnerCheck;
 
 
-    function winnerCheck(){
-        //console.log("in winnerCheck FN");
 
-        var result="no winner";
-        if(fighters[0].health <1 && fighters[1].health <1){
+        function winnerCheck(){
+            //console.log("in winnerCheck FN");
+
+            var result="no winner";
+            if(fighters[0].health <1 && fighters[1].health <1){
             result = "You Both Die";
-        } else if(fighters[0].health <1){
+            } else if(fighters[0].health <1){
             result = fighters[1].name +"WINS!!!"
-        } else if(fighters[1].health <1){
+            } else if(fighters[1].health <1){
             result = fighters[0].name +"WINS!!!"
 
-        };
-        return result;
+            };
+            return result;
 
-    };
+        };
     //console.log("program starts");
     //fight();
-
+    };
+    outcome.innerHTML(fight);
 })();
 
