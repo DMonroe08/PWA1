@@ -2,11 +2,10 @@
 	* Mid Terms for PWA-1
 	* Danielle Monroe
 */
-
 var alum = function(){
     var button = document.getElementById(".buttonred");
     var i = 0;
-
+    var studentData = document.querySelector("#form-box").querySelector("#output");
     //sets up student information
     var students = [
 
@@ -34,17 +33,23 @@ var alum = function(){
             console.log('Address:' + students[i].address);
             console.log('GPA:' + students[i].gpa);
         }
-    }
+        studentData.innerHTML = studentInfo[i];
+    };
 
+    //adds student
     var addData = function(){
         var newStudent = {
             name: "Audry Hepburn",
             address: {'street': "19 Tiffany Blvd", 'city': "Higgins", 'state': "California"},
             gpa: [3.4, 3.5, 2.4, 3.2]
         }
-    }
-    
     };
+
+    var person = document.querySelector("#form-box").querySelector("#output").querySelector("#name");
+    person.innerHTML = students.name.address.gpa;
+
+
+};
 
 
 
